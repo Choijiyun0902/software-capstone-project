@@ -4,7 +4,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class OpenAiService {
     public String askAi(String items) {
-        // 사용자가 입력한 재료(items)에 특정 단어가 들어있는지 확인해서 대답을 바꿔줘요!
+        // 사용자가 입력한 재료 바탕으로 레시피 추천
         
         if (items.contains("계란")) {
             return "🍳 AI 요리사: [" + items + "] 재료라면 '폭신한 계란찜'이나 '계란말이'를 추천해요!";
